@@ -715,6 +715,24 @@ nav.navbar .navbar-collapse {
 }
 
 /* Diagnostik */
+#diagnostik .card h4 {
+    position: absolute;
+    display: inline;
+    margin-left: -90px;
+    height: 30px;
+    width: 180px;
+    top: -15px;
+    left: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #1982db;
+    color: #ffffff;
+}
+
 #diagnostik .accordion-button {
     padding-left: 0.5rem;
     padding-right: 0;

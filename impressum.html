@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Praxis Antje Plehn – Hausärtzin</title>
+    <title>Christian Meyer – Orthopäde</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Die Hausarztpraxis Antje Plehn befindet sich im Zentrum von Halle/Saale mit dem Fokus auf einer individualisierten hausärztlichen Versorgung.">
+    <meta name="description" content="Christian Meyer – Orthopädische Praxis in Halle / Saale • Leistungen: Röntgendiagnostik Skelett • Manuelle Therapie / Chirotherapie • Konservative Arthrosetherapie">
     <meta name="robots" content="index,follow">
-    <meta property="og:title" content="Praxis Antje Plehn – Hausärtzin">
-    <meta property="og:description" content="Die Hausarztpraxis Antje Plehn befindet sich im Zentrum von Halle/Saale mit dem Fokus auf einer individualisierten hausärztlichen Versorgung.">
-    <meta property="og:image" content="https://www.hausarzt-plehn.de/assets/images/antje_plehn_fb.jpg">
+    <meta property="og:title" content="Christian Meyer – Orthopäde">
+    <meta property="og:description" content="Christian Meyer – Orthopädische Praxis in Halle / Saale • Leistungen: Röntgendiagnostik Skelett • Manuelle Therapie / Chirotherapie • Konservative Arthrosetherapie ">
+    <meta property="og:image" content="https://www.ortho-meyer.de/assets/images/christian_meyer_fb.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.antje-plehn.de">
+    <meta property="og:url" content="https://www.ortho-meyer.de">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/custom.css">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_nacken.png" fetchPriority="low">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_schultergelenk.png" fetchPriority="low">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_wirbelsaeule.png" fetchPriority="low">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_ellenbogen.png" fetchPriority="low">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_hand.png" fetchPriority="low">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_hueftgelenk.png" fetchPriority="low">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_kniegelenk.png" fetchPriority="low">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_fuss.png" fetchPriority="low">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-icon-72x72.png">
@@ -33,10 +41,11 @@
 </head>
 <body class="imprint">
     <nav id="navbar" class="navbar navbar-light">
-        <div class="container d-flex justify-content-end">
+        <div class="container">
+            <a class="navbar-brand my-2 my-sm-3" href="./" title="Christian Meyer"><img src="assets/images/cm_logo.svg" height="40" class="logo" alt="Logo"></a>
             <button class="navbar-toggler d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <label for="hamburger">
-                    <span>Menü</span>
+                    <span class="d-none d-sm-inline">Menü</span>
                     <span>Schließen</span>
                 </label>
                 <input type="checkbox" id="hamburger" />
@@ -48,81 +57,159 @@
             </button>
             <div id="navbar-collapse" class="collapse navbar-collapse">
                 <div class="navbar-nav navbar-nav-scroll">
-                    <a class="nav-link" href="./">Home</a>
+                    <a class="nav-link" href="./#header">Home</a>
+                    <a class="nav-link" href="./#diagnostik">Diagnostik</a>
                     <a class="nav-link" href="./#leistungen">Leistungen</a>
                     <a class="nav-link" href="./#team">Team</a>
                     <a class="nav-link" href="./#praxis">Praxis</a>
                     <a class="nav-link" href="./#kontakt">Kontakt</a>
-                    <a class="btn btn-primary btn-arrow d-block mt-4 mb-3" href="tel:+4934527976800">Anrufen</a>
-                    <a class="btn btn-primary btn-arrow d-block mb-3" href="mailto:info@hausarzt-plehn.de" target="_blank">E-Mail</a>
-                    <a class="nav-link" href="./" title="Antje Plehn"><img src="assets/images/ap_logo_mobile.svg" height="40" alt="Logo"></a>
+                    <div class="d-flex flex-column flex-md-row">
+                        <a class="btn btn-primary d-block mt-4 mt-md-5 mb-3 me-0 me-md-2" href="tel:+493452029021">Anrufen</a>
+                        <a class="btn btn-primary d-block mt-md-4 mt-md-5 mb-3 ms-0 ms-md-2" href="mailto:praxis@hausarzt-plehn.de" target="_blank">E-Mail</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
     <article>
+        <section id="header">
+            <div class="container d-none d-md-block mw-100 bg-blue">
+                <div class="row gx-0">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row position-relative">
+                                <div class="col-12 col-md-5 col-lg-4 pt-2 pt-md-0 invisible" style="z-index: 1;">
+                                    <div class="my-5 p-4 bg-white">
+                                        <h4>Sprechzeiten</h4>
+                                        <table class="w-100">
+                                            <tbody>
+                                            <tr>
+                                                <td><strong>M</strong></td>
+                                                <td>8 – 13</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>D</strong></td>
+                                                <td>nach Vereinbarung</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>M</strong></td>
+                                                <td>8 – 12 / 14 – 18</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>D</strong></td>
+                                                <td>8 – 12 / 14 – 18</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>F</strong></td>
+                                                <td>8 – 12</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="d-flex flex-column flex-lg-row mt-3">
+                                            <a class="btn btn-primary w-100 mt-2 me-0 me-lg-2" href="tel:+493445200068">Anrufen</a>
+                                            <a class="btn btn-primary w-100 mt-2 ms-0 ms-lg-2" href="mailto:praxis@ortho-kretschmer.de">E-Mail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-7 col-lg-8  p-4">
+                                    <img src="assets/images/cm_header.png" width="795" height="610" class="w-100 h-auto header" alt="Sprinter">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mw-100 p-0 d-md-none">
+                <div class="container-lg gx-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="assets/images/cm_header_400.jpg" srcset="assets/images/cm_header_400.jpg 400w, assets/images/cm_header_800.jpg 800w, assets/images/cm_header_1600.jpg 1600w" class="header w-100" alt="Sprinter">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
-                        <h2 class="mt-5 my-5 text-start"><span></span>Impressum</h2>
+                        <h2 class="mb-5"><span></span>Impressum</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
                         <h4 class="pb-4">Angaben nach § 5 TMG</h4>
-                        <p class="font-size-18">
-                            <em>Antje Plehn</em><br>
-                            Fachärztin für Allgemeinmedizin
+                        <p>
+                            <em>Christian Meyer</em><br>
+                            Orthopäde
                         </p>
-                        <p class="font-size-18">
-                            Am Leipziger Turm 5<br>
-                            06108 Halle/Saale
+                        <p>
+                            Steinweg 3<br>
+                            06110 Halle/Saale
                         </p>
-                        <p class="font-size-18">
-                            <em>T</em> +49 (0) 345.20 29 021<br>
-                            <em>F</em> +49 (0) 345.29 896 875<br>
-                            <a href="mailto:praxis@hausarzt-plehn.de">praxis@hausarzt-plehn.de</a><br>
-                            www.hausarzt-plehn.de
-                        </p>
-                        <p class="font-size-18">
-                            Es erfolgt keine Beratung zu medizinischer Behandlung über diese E-Mail-Adresse.
+                        <p>
+                            <em>T</em> +49 (0) 345.298 97 20<br>
+                            <em>F</em> +49 (0) 345.298 97 30<br>
+                            <a href="mailto:praxis@ortho-meyer.de">praxis@ortho-meyer.de</a><br>
+                            www.ortho-meyer.de
                         </p>
                         <h4 class="mt-5 mb-4">Berufsbezeichnung und berufsrechtliche Regelungen</h4>
-                        <p class="font-size-18">
+                        <p class="">
                             <em>Berufsbezeichnung:</em><br>
-                            Fachärztin für Allgemeinmedizin<br>
-                            Fachärztin für Anästhesiologie<br>
+                            Facharzt für Orthopädie & Unfallchirurgie<br>
+                            verliehen in Deutschland
                         </p>
-                        <p class="font-size-18">
-                            <em>Zusatzbezeichnung:</em><br>
-                            Notfallmedizin
-                            Verliehen in der Bundesrepublik Deutschland
-                        </p>
-                        <p class="font-size-18">
+                        <p>
                             <em>Zuständige Kammer:</em><br>
-                            Ärztekammer Sachsen-Anhalt
+                            Landesärztekammer Sachsen-Anhalt (www.aeksa.de)
                         </p>
-                        <p class="font-size-18">
-                            Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständigen Ärztekammer (<a href="https://www.aeksa.de" target="_blank">www.aeksa.de</a>)
+                        <p>
+                            <em>Zuständige Kassenärztliche Vereinigung:</em><br>
+                            Kassenärztliche Vereinigung Sachsen-Anhalt (www.kvsa.de)
                         </p>
-                        <p class="font-size-18">
-                            <em>Redaktionell Verantwortlicher:</em><br>
-                            Antje Plehn<br>
-                            Am Leipziger Turm 5<br>
-                            06108 Halle/Saale
+                        <p>
+                            <em>Es gelten folgende berufsrechtliche Regelungen:</em><br>
+                            Berufsordnung der Ärztekammer Sachsen-Anhalt
                         </p>
-                        <p class="font-size-18">
+                        <p>
+                            <em>Regelungen einsehbar unter:</em><br>
+                            https://www.aeksa.de/files/1465CCA7434/1_Berufsordnung_17052014.pdf
+                        </p>
+                        <h4 class="mt-5 mb-4">Angaben zur Berufshaftpflichtversicherung</h4>
+                        <p>
+                            <em>Name und Sitz des Versicherers:</em><br>
+                            Deutsche Ärzteversicherung Allgemeine Zweigniederlassung der AXA Vers. AG, 51171 Köln
+                        </p>
+                        <p>
+                            <em>Geltungsraum der Versicherung:</em><br>
+                            Deutschland
+                        </p>
+                        <h4 class="mt-5 mb-4">EU-Streitschlichtung</h4>
+                        <p>
+                            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.
+                            Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                        </p>
+                        <h4 class="mt-5 mb-4">Fotonachweis:</h4>
+                        <p>
+                            <em>Fotos:</em><br>
+                            Header: © Yakobchuk Olena / Adobe Stock<br>
+                            Diagnostik: © Syda Productions / Adobe Stock<br>
+                            Leistungen: © Syda Productions / Adobe Stock<br>
+                        </p>
+                        <p>
                             <em>Design:</em><br>
                             <a href="http://katharinawoellner.de/" target="_blank">Katharina Wöllner</a>
+                        </p>
+                        <p>
+                            <em>Quelle:</em><br>
+                            <a href="https://www.e-recht24.de" target="_blank">https://www.e-recht24.de</a>
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
-                        <h2 class="my-5 d-block d-sm-none text-start"><span></span>Datenschutz</h2>
-                        <h2 class="my-5 d-none d-sm-block text-start"><span></span>Datenschutzerklärung</h2>
+                        <h2 class="mb-5"><span></span>Datenschutz</h2>
                     </div>
                 </div>
                 <div class="row mb-5">
@@ -147,21 +234,18 @@
                         </p>
                         <p>
                             <em>Welche Rechte haben Sie bezüglich Ihrer Daten?</em><br>
-                            Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer
-                            gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
+                            Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
                         </p>
                         <h4 class="my-4">2. Hosting</h4>
                         <p>
-                            <em>IONOS</em><br>
-                            Wir hosten unsere Website bei IONOS SE. Anbieter ist die IONOS SE, Elgendorfer Str. 57, 56410
-                            Montabaur (nachfolgend: IONOS). Wenn Sie unsere Website besuchen, erfasst IONOS verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von IONOS: https://www.ionos.de/terms-gtc/terms-privacy.
-                            Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein
-                            berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine
-                            entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar.
+                            Wir hosten die Inhalte unserer Website bei folgendem Anbieter:<br>
+                            Alfahosting
                         </p>
                         <p>
-                            <em>Auftragsverarbeitung</em><br>
-                            Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.
+                            Anbieter ist die Alfahosting GmbH, Ankerstraße 3b, 06108 Halle (Saale) (nachfolgend Alfahosting) Wenn Sie unsere Website besuchen, erfasst Alfahosting verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von Alfahosting: https://alfahosting.de/datenschutz/.
+                        </p>
+                        <p>
+                            Die Verwendung von Alfahosting erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art.6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. für Device-Fingerprinting) im Sinne des TTDSG umfasst. Die Einwilligung ist jederzeit widerrufbar.
                         </p>
                         <h4 class="my-4">3. Allgemeine Hinweise und Pflichtinformationen</h4>
                         <p>
@@ -169,69 +253,70 @@
                             Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
                         </p>
                         <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
-                        <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+                        <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+
                         <p>
                             <em>Hinweis zur verantwortlichen Stelle</em><br>
                             Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br>
-                            Hausarztpraxis Antje Plehn<br>
-                            Am Leipziger Turm 5<br>
-                            06108 Halle/Saale<br>
-                            Telefon: +49 (0) 3452029021<br>
-                            E-Mail: praxis@hausarzt-plehn.de<br>
+                            Christian Meyer<br>
+                            Steinweg 3<br>
+                            06110 Halle/Saale<br>
+                            Telefon: +49 (0) 345.298 97 20<br>
+                            E-Mail: praxis@ortho-meyer.de
                         </p>
-                        <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
+                        <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
                         <p>
                             <em>Speicherdauer</em><br>
-                            Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.
+                            Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.
                        </p>
                         <p>
+                            <em>Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website</em><br>
+                            Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung
+                            personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TTDSG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert.
+                        </p>
+                        <p>
+                            <em>Empfänger von personenbezogenen Daten</em><br>
+                            Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.
+                        </p>
+                        <p>
                             <em>Widerruf Ihrer Einwilligung zur Datenverarbeitung</em><br>
-                            Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+                            Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
                         </p>
                         <p>
-                            <em>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen   Direktwerbung (Art. 21 DSGVO)</em><br>
-                            WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).
-                        </p>
-                        <p>
-                            WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).
+                            <em>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</em><br>
+                            WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO
+                            ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO). WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).
                         </p>
                         <p>
                             <em>Beschwerderecht bei der zuständigen Aufsichtsbehörde</em><br>
-                            Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
-                            Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
+                            Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
                         </p>
                         <p>
                             <em>Recht auf Datenübertragbarkeit</em><br>
-                            Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichenverlangen, erfolgt dies nur, soweit es technisch machbar ist.
+                            Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.
                         </p>
                         <p>
-                            <em>Auskunft, Löschung und Berichtigung</em><br>
-                            Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.
+                            <em>Auskunft, Berichtigung und Löschung</em><br>
+                            Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.
                         </p>
                         <p>
                             <em>Recht auf Einschränkung der Verarbeitung</em><br>
                             Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:
                         </p>
                         <ul>
-                            <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+                            <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
                             <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>
-                            <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
-                            <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
-
+                            <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
                         </ul>
                         <p>
-                            Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.
+                            Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.<br>
+                            Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.
                         </p>
                         <h4 class="my-4">4. Datenerfassung auf dieser Website</h4>
                         <p>
                             <em>Anfrage per E-Mail, Telefon oder Telefax</em><br>
-                            Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
-                        </p>
-                        <p>
-                            Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.
-                        </p>
-                        <p>
-                            Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
+                            Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
+                            Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
                         </p>
                         <p>
                             Quelle:<br>
@@ -247,25 +332,16 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col col-md-4 d-none d-md-flex align-self-center">
-                        <p class="mb-0">&copy; Antje Plehn</p>
+                    <div class="col-12 col-sm-6 d-none d-sm-flex">
+                        <p class="mb-0">© Christian Meyer – Orthopäde</p>
                     </div>
-                    <div class="col-3 col-md-4 d-flex align-self-center justify-content-start justify-content-md-center">
-                        <a href="./">
-                            <picture>
-                                <source srcset="assets/images/ap_logo_footer.svg" media="(min-width: 768px)">
-                                <img src="assets/images/ap_logo_footer_mobile.svg" height="50" class="w-100" alt="Antje Plehn">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="col-9 col-md-4 d-flex align-self-center justify-content-end">
-                        <p class="mb-0 text-end"><a href="impressum.html">Impressum / Datenschutz</a></p>
+                    <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
+                        <p class="mb-0"><a href="impressum.html">Impressum | Datenschutz</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
     <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/scripts/custom.js"></script>
@@ -285,14 +361,31 @@
                 e.preventDefault();
             });
 
-            $('#leistungen a[data-bs-toggle]').on('click', function () {
-                const text= $(this).text();
-                if(text === '+ mehr'){
-                    $(this).html('- weniger');
-                } else{
-                    $(this).text('+ mehr');
+            const links = document.querySelectorAll('svg a');
+            for (i = 0; i < links.length; i++) {
+                const link = links[i];
+
+                const changeContext = function() {
+                    const href = link.getAttributeNS('http://www.w3.org/1999/xlink', 'href');
+                    const hash = href.slice(1);
+                    const imageTag = document.getElementById('diagnostik_image');
+                    const src = 'assets/images/cm_diagnostik_' + hash + '.png';
+                    imageTag.setAttributeNS('http://www.w3.org/1999/xlink', 'href', src);
+                    const bsCollapse = new bootstrap.Collapse('#diagnostik_' + hash, {
+                        show: true
+                    });
                 }
-            });
+
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    changeContext();
+                });
+                link.addEventListener('mouseover', function(event) {
+                    event.preventDefault();
+                    changeContext();
+                    console.log('over');
+                });
+            }
         })
     </script>
 </body>
