@@ -13,14 +13,14 @@
     <meta property="og:url" content="https://www.ortho-meyer.de">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/custom.css">
-    <link rel="preload" as="image" href="assets/images/cm_diagnostik_nacken.png" fetchPriority="low">
-    <link rel="preload" as="image" href="assets/images/cm_diagnostik_schultergelenk.png" fetchPriority="low">
-    <link rel="preload" as="image" href="assets/images/cm_diagnostik_wirbelsaeule.png" fetchPriority="low">
-    <link rel="preload" as="image" href="assets/images/cm_diagnostik_ellenbogen.png" fetchPriority="low">
-    <link rel="preload" as="image" href="assets/images/cm_diagnostik_hand.png" fetchPriority="low">
-    <link rel="preload" as="image" href="assets/images/cm_diagnostik_hueftgelenk.png" fetchPriority="low">
-    <link rel="preload" as="image" href="assets/images/cm_diagnostik_kniegelenk.png" fetchPriority="low">
-    <link rel="preload" as="image" href="assets/images/cm_diagnostik_fuss.png" fetchPriority="low">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_nacken.png">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_schultergelenk.png">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_wirbelsaeule.png">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_ellenbogen.png">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_hand.png">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_hueftgelenk.png">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_kniegelenk.png">
+    <link rel="preload" as="image" href="assets/images/cm_diagnostik_fuss.png">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-icon-72x72.png">
@@ -199,7 +199,7 @@
                         </p>
                         <p>
                             <em>Design:</em><br>
-                            <a href="http://katharinawoellner.de/" target="_blank">Katharina Wöllner</a>
+                            <a href="https://katharinawoellner.de/" target="_blank">Katharina Wöllner</a>
                         </p>
                         <p>
                             <em>Quelle:</em><br>
@@ -226,7 +226,7 @@
                         </p>
                         <p>
                             <em>Wie erfassen wir Ihre Daten?</em><br>
-                            Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+                            Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
                         </p>
                         <p>
                             <em>Wofür nutzen wir Ihre Daten?</em><br>
@@ -362,7 +362,7 @@
             });
 
             const links = document.querySelectorAll('svg a');
-            for (i = 0; i < links.length; i++) {
+            for (let i = 0; i < links.length; i++) {
                 const link = links[i];
 
                 const changeContext = function() {
@@ -371,7 +371,7 @@
                     const imageTag = document.getElementById('diagnostik_image');
                     const src = 'assets/images/cm_diagnostik_' + hash + '.png';
                     imageTag.setAttributeNS('http://www.w3.org/1999/xlink', 'href', src);
-                    const bsCollapse = new bootstrap.Collapse('#diagnostik_' + hash, {
+                    new bootstrap.Collapse('#diagnostik_' + hash, {
                         show: true
                     });
                 }
