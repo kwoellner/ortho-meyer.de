@@ -163,7 +163,6 @@ hr {
     }
 }
 
-
 .font-size-14 {
     font-size: 14px;
     font-weight: 300;
@@ -193,6 +192,12 @@ hr {
 
     .mt-xxl {
         margin-top: 140px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .h-lg-80 {
+        height: 80% !important;
     }
 }
 
@@ -802,6 +807,16 @@ nav.navbar .navbar-collapse {
     }
 }
 
+#diagnostik_accordion {
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+    #diagnostik_accordion {
+        margin-top: -30%;
+    }
+}
+
 #diagnostik_accordion .card-body {
     padding: 45px 30px 30px 30px;
     font-size: 16px;
@@ -917,6 +932,11 @@ nav.navbar .navbar-collapse {
 }
 
 /* Impressum */
+body.imprint h4 {
+    font-weight: 300;
+    color: #0a1c2b;
+}
+
 body.imprint p {
     margin-bottom: 1.5rem;
 }
