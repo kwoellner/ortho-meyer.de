@@ -250,7 +250,7 @@
                                 <div class="card my-3 position-relative rounded-0 border-0">
                                     <h4>Nacken</h4>
                                     <div class="card-body">
-                                        Nackenbeschwerden können vielfältige Ursachen wie Haltungsprobleme, muskuläre Verspannungen oder psychischen Stress haben. Dies führt oft zu Einschränkungen der Beweglichkeit, Muskelverspannungen und Schmerzen. Empfehlenswert sind ergonomische An-passungen im Alltag, gezielte Dehnübungen und Ent-spannungstechniken.
+                                        Nackenbeschwerden können vielfältige Ursachen wie Haltungsprobleme, muskuläre Verspannungen oder psychischen Stress haben. Dies führt oft zu Einschränkungen der Beweglichkeit, Muskelverspannungen und Schmerzen. Empfehlenswert sind ergonomische Anpassungen im Alltag, gezielte Dehnübungen und Entspannungstechniken.
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +266,7 @@
                                 <div class="card my-3 position-relative rounded-0 border-0">
                                     <h4>Wirbelsäule</h4>
                                     <div class="card-body">
-                                        Wirbelsäulenprobleme wie Bandscheibenprobleme, Spondylose und Wirbelgleiten sind häufig und führen zu Schmerzen, Bewegungseinschränkungen und Unwohlsein. Behandlungsmöglichkeiten wie Physiotherapie, Medikamente und gegebenenfalls Operationen können zur Schmerzlinderung und Wieder-herstellung der Wirbelsäulenfunktion beitragen.
+                                        Wirbelsäulenprobleme wie Bandscheibenprobleme, Spondylose und Wirbelgleiten sind häufig und führen zu Schmerzen, Bewegungseinschränkungen und Unwohlsein. Behandlungsmöglichkeiten wie Physiotherapie, Medikamente und gegebenenfalls Operationen können zur Schmerzlinderung und Wiederherstellung der Wirbelsäulenfunktion beitragen.
                                     </div>
                                 </div>
                             </div>
@@ -306,7 +306,7 @@
                                 <div class="card my-3 position-relative rounded-0 border-0">
                                     <h4>Fuss</h4>
                                     <div class="card-body">
-                                        Zu den häufigsten Fußbeschwerden zählen Fersensporn, Plantarfasziitis, Sprunggelenksverletzungen und Hallux valgus. Diese führen oft zu Schmerzen, Schwellungen und eingeschränkter Beweglichkeit. Behandlungsoptionen wie orthopädische Einlagen, Physio-therapie und Schmerzmittel können zur Besserung und Wiederherstellung der Fußgesundheit beitragen.
+                                        Zu den häufigsten Fußbeschwerden zählen Fersensporn, Plantarfasziitis, Sprunggelenksverletzungen und Hallux valgus. Diese führen oft zu Schmerzen, Schwellungen und eingeschränkter Beweglichkeit. Behandlungsoptionen wie orthopädische Einlagen, Physiotherapie und Schmerzmittel können zur Besserung und Wiederherstellung der Fußgesundheit beitragen.
                                     </div>
                                 </div>
                             </div>
@@ -614,7 +614,7 @@
                         </p>
                         <p class="pb-2">
                             <strong>Studium der Humanmedizin</strong><br>
-                            an der Martin-Luther—Universität Halle-Wittenberg
+                            an der Martin-Luther-Universität Halle-Wittenberg
                         </p>
                         <p class="mb-0">
                             <strong>Facharztausbildung in der Abteilung:</strong>
@@ -779,6 +779,9 @@
 <script>
 $(document).ready(function() {
     $('.nav-link').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
         const divId = $(this).attr('href');
         const offset = 50;
         $('html, body').animate({
@@ -789,7 +792,6 @@ $(document).ready(function() {
             const bsCollapse = new bootstrap.Collapse(menuToggle);
             bsCollapse.toggle();
         }
-        e.preventDefault();
     });
 
     const links = document.querySelectorAll('svg a');

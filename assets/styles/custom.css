@@ -113,6 +113,10 @@ a:focus {
     color: #17365d;
 }
 
+p, li {
+    hyphens: auto;
+}
+
 strong {
     font-style: normal;
     font-weight: 500;
