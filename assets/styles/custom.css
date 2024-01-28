@@ -502,14 +502,14 @@ nav.navbar .navbar-collapse {
     transition: top .15s .17s, transform .17s;
 }
 
-#hamburger:checked + label div {
+button:not(.collapsed) #hamburger + label div {
     top: 10px;
     width: 30px;
     transform: rotate(135deg);
     transition: top .1s, transform .12s .1s;
 }
 
-#hamburger:checked + label div:nth-child(3) {
+button:not(.collapsed) #hamburger + label div:nth-child(3) {
     transform: rotate(225deg);
     transition: top .1s, transform .17s .1s;
 }
@@ -746,7 +746,7 @@ nav.navbar .navbar-collapse {
     padding-right: 0;
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 24px;
     background-color: #edf3f5;
     color: #002948;
     text-transform: uppercase;

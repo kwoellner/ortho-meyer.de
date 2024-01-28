@@ -48,7 +48,7 @@
                     <span class="d-none d-sm-inline">Menü</span>
                     <span>Schließen</span>
                 </label>
-                <input type="checkbox" id="hamburger" />
+                <input type="checkbox" id="hamburger" disabled="disabled" />
                 <label for="hamburger">
                     <div></div>
                     <div></div>
@@ -774,6 +774,7 @@
 </footer>
 
 <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/scripts/custom.js"></script>
 <script>
@@ -819,6 +820,16 @@ $(document).ready(function() {
             changeContext();
         });
     }
+
+    $(".carousel").swipe({
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+            if (direction === 'left') {
+                $(this).carousel('next');
+            } else if(direction === 'right') {
+                $(this).carousel('prev');
+            }
+        }
+    });
 })
 </script>
 </body>
