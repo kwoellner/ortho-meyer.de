@@ -867,6 +867,26 @@ button:not(.collapsed) #hamburger + label div:nth-child(3) {
     background-repeat: no-repeat;
 }
 
+#leistungen ul {
+    padding-left: 15px;
+    list-style: none;
+}
+
+#leistungen ul li {
+    position: relative;
+}
+
+#leistungen ul li:before {
+    position: absolute;
+    left: -15px;
+    top: 12px;
+    width: 5px;
+    height: 5px;
+    background-image: url('../images/bulletpoint.svg');
+    background-size: 5px 5px;
+    content: ' ';
+}
+
 #leistungen .card a[aria-expanded="true"] {
     background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="utf-8"%3F><svg version="1.1" id="Komponente_11_38" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 21 21" style="enable-background:new 0 0 21 21;" xml:space="preserve"><circle fill="%231982DB" cx="10.5" cy="10.5" r="10"/><g transform="translate(-1231 -2925)"><line fill="none" stroke="%23FFFFFF" x1="1246.5" y1="2935.5" x2="1236.5" y2="2935.5"/></g></svg>');
 }
